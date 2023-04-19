@@ -7,8 +7,10 @@ Crearemos una mini app que realiza operaciones CRUD en Python, usando el siguien
 ***Flask*** 
 Es un micro Framework escrito en Python y concebido para facilitar el desarrollo de Aplicaciones Web bajo el patrón MVC.
 MVC  permite diferenciar y separar lo que es el modelo de datos , es decir los datos que van a tener la App que normalmente están guardados en la base de datos, la vista,  la página HTML y el controlador donde se gestiona las peticiones de la app web.
+
 ***SQLAlchemy***
 SQLAlchemy es el kit de herramientas SQL de Python y el mapeador relacional de objetos que ofrece a los desarrolladores de aplicaciones toda la potencia y flexibilidad de SQL.
+
 ***Postgres*** 
 Es un potente sistema de base de datos relacional de objetos de código abierto
 Docker para  separar las aplicaciones de la infraestructura y que pueda ejecutar rápidamente.

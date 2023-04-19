@@ -86,8 +86,8 @@ docker-compose up -d
 
 
 ## Referencias
-(SQLAlchemy - El kit de herramientas de base de datos para Python)
-(Flask Tutorials – Real Python)
-(PostgreSQL: La base de datos de código abierto más avanzada del mundo)
-(Docker Compose overview | Docker Documentation)
-(Dockerfile reference | Docker Documentation)
+(SQLAlchemy - El kit de herramientas de base de datos para Python) /
+(Flask Tutorials – Real Python) /
+(PostgreSQL: La base de datos de código abierto más avanzada del mundo) /
+(Docker Compose overview | Docker Documentation) /
+(Dockerfile reference | Docker Documentation) /

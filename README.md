@@ -41,17 +41,20 @@ Verificar las operaciones CRUD con Postman.
 ## Comandos para la ejecución:
 
 Para ejecutar el contenedor Postgres:
-docker compose up -d flask_db
+
+	docker compose up -d flask_db
 
 ![image.png]
 
 
 
 Para comprobar si el contenedor se está ejecutando:
-docker compose logs
+	
+	docker compose logs
  
 Para mostrar todos los contenedores (en ejecución y detenidos):
-docker ps -a
+	
+	docker ps -a
  
 
 Para probar la conexión db, utilice la siguiente configuración:
@@ -64,8 +67,9 @@ Para verificar la conexión a la base de datos. Usamos el software DBeaver
  
 
 Para construir y ejecutar la aplicación Flask.
-docker compose build
-Docker compose up –build flask_app
+
+	docker compose build
+	docker compose up –build flask_app
  
 
 Para comprobar si la imagen se ha creado correctamente:
@@ -74,11 +78,13 @@ Para comprobar si la imagen se ha creado correctamente:
 
 
 Ejecutar el servicio flask_app
+	
 	Sudo docker compose up flask_app
 
 
 Ejecutar docker-compose y sus servicios
-docker-compose up -d
+	
+	docker-compose up -d
  
 
 ## Validar operaciones  GET, POST, PUT,DELETE

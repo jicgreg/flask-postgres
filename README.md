@@ -24,9 +24,9 @@ Docker Compose: Compose es una herramienta para definir y ejecutar aplicaciones 
  •	Borrar
 
 ## Pre-requisitos
-Docker desktop
-Sofware para validar conexión de la base de datos: ej Tableu, Dbeaver, PGAdmin4.
-Software para validar operaciones CRUD: ej Postman, Testfully,Thunder Client, Postcode,Firecamp.
+	*Docker desktop
+	*Sofware para validar conexión de la base de datos: ej Tableu, Dbeaver, PGAdmin4.
+	*Software para validar operaciones CRUD: ej Postman, Testfully,Thunder Client, Postcode,Firecamp.
 
 ## Diagrama y arquitectura de la aplicación:
 

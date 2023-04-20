@@ -25,7 +25,9 @@ Docker Compose: Compose es una herramienta para definir y ejecutar aplicaciones 
 
 ## Diagrama y arquitectura de la aplicación:
 
+![Diagráma entidad relación](https://github.com/jicgreg/flask-postgres/blob/a6c4710ebea9a50f0445e38e11fa2bd26f29ab94/DER_mini_app.JPG)
 
+![Componentes-Arquitectura](https://github.com/jicgreg/flask-postgres/blob/a6c4710ebea9a50f0445e38e11fa2bd26f29ab94/arquitectuta_flask_postgres_docker.png)
 
 
 ## Pasos para la construcción:

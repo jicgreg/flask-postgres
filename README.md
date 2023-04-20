@@ -30,9 +30,9 @@ Software para validar operaciones CRUD: ej Postman, Testfully,Thunder Client, Po
 
 ## Diagrama y arquitectura de la aplicación:
 
-![Diagráma entidad relación] (https://github.com/jicgreg/flask-postgres/blob/a6c4710ebea9a50f0445e38e11fa2bd26f29ab94/DER_mini_app.JPG)
+![Diagráma entidad relación](https://github.com/jicgreg/flask-postgres/blob/a6c4710ebea9a50f0445e38e11fa2bd26f29ab94/DER_mini_app.JPG)
 
-![Componentes-Arquitectura] (https://github.com/jicgreg/flask-postgres/blob/a6c4710ebea9a50f0445e38e11fa2bd26f29ab94/arquitectuta_flask_postgres_docker.png)
+![Componentes-Arquitectura](https://github.com/jicgreg/flask-postgres/blob/a6c4710ebea9a50f0445e38e11fa2bd26f29ab94/arquitectuta_flask_postgres_docker.png)
 
 
 ## Pasos para la construcción:
@@ -99,8 +99,8 @@ Ejecutar docker-compose y sus servicios
 
 
 ## Referencias
-![SQLAlchemy - El kit de herramientas de base de datos para Python] (https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion2/sqlalchemy.html)/
-![Flask Tutorials – Real Python] (https://realpython.com/tutorials/flask/)/
-![PostgreSQL: La base de datos de código abierto más avanzada del mundo] (https://www.postgresql.org/about/press/presskit14/es/) /
-![Docker Compose overview | Docker Documentation] (https://docs.docker.com/compose/)/
-![(Dockerfile reference | Docker Documentation] (https://docs.docker.com/engine/reference/builder/) /
+*[SQLAlchemy - El kit de herramientas de base de datos para Python](https://entrenamiento-frameworks-web-python.readthedocs.io/es/latest/leccion2/sqlalchemy.html)
+*[Flask Tutorials – Real Python](https://realpython.com/tutorials/flask/)
+*[PostgreSQL: La base de datos de código abierto más avanzada del mundo](https://www.postgresql.org/about/press/presskit14/es/) 
+*[Docker Compose overview | Docker Documentation](https://docs.docker.com/compose/)
+*[(Dockerfile reference | Docker Documentation](https://docs.docker.com/engine/reference/builder/) 

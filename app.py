@@ -1,13 +1,14 @@
 from flask import Flask, request, jsonify, make_response
-from flask_sqlalchemy import SQLAlchemy  
+from flask_sqlalchemy import SQLAlchemy
 from os import environ  
+
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('CON_DB')
 db = SQLAlchemy(app)
 
-class User(db.Model):
-    __tablename__ = 'users'
+class Usuario(db.Model):
+    __tablename__ = 'usuarios'
 
     id = db.Column(db.Integer, primary_key=True)
     nombre = db.Column(db.String(80), unique=True, nullable=False)
@@ -50,13 +51,13 @@ db.create_all()
 def test():
   return make_response(jsonify({'message': 'prueba conexión'}), 200)
 
-# create a user
-@app.route('/users/', methods=['POST'])
-def create_user():
+# create a Usuario
+@app.route('/usuarios/', methods=['POST'])
+def create_usuario():
   try:
     data = request.get_json()
-    new_user = User(nombre=data['nombre'],domicilio=data['domicilio'],telefono=data['telefono'],email=data['email'])
-    db.session.add(new_user)
+    new_usuario = Usuario(nombre=data['nombre'],domicilio=data['domicilio'],telefono=data['telefono'],email=data['email'])
+    db.session.add(new_usuario)
     db.session.commit()
     return make_response(jsonify({'message': 'usuario creado'}), 201)
   except :
@@ -86,14 +87,14 @@ def create_libro():
   except :
     return make_response(jsonify({'message': 'error creando libro'}), 500)  
 
-# get all users
-@app.route('/users/', methods=['GET'])
-def get_users():
+# get all Usuarios
+@app.route('/usuarios/', methods=['GET'])
+def get_usuarios():
   try:
-    users = db.session.query.all()
-    return make_response(jsonify([user.json() for user in users]), 200)
+    usuarios = db.session.query.all()
+    return make_response(jsonify([usuario.json() for usuario in usuarios]), 200)
   except :
-    return make_response(jsonify({'message': 'error getting users'}), 500)
+    return make_response(jsonify({'message': 'error getting Usuarios'}), 500)
 
 # get all prestamos
 @app.route('/prestamos/', methods=['GET'])
@@ -113,16 +114,16 @@ def get_libros():
   except :
     return make_response(jsonify({'message': 'error getting prestamos'}), 500)
 
-# get a user by id
-@app.route('/users/<int:id>', methods=['GET'])
-def get_user(id):
+# get a Usuario by id
+@app.route('/usuarios/<int:id>', methods=['GET'])
+def get_usuario(id):
   try:
-    user = User.query.filter_by(id=id).first()
-    if user:
-      return make_response(jsonify({'user': user.json()}), 200)
-    return make_response(jsonify({'message': 'user not found'}), 404)
+    usuario = usuario.query.filter_by(id=id).first()
+    if usuario:
+      return make_response(jsonify({'Usuario': usuario.json()}), 200)
+    return make_response(jsonify({'message': 'Usuario no encontrado'}), 404)
   except :
-    return make_response(jsonify({'message': 'error getting user'}), 500)
+    return make_response(jsonify({'message': 'error obteniendo Usuario'}), 500)
   
   # get a prestamos by id  
 @app.route('/prestamos/<int:id>', methods=['GET'])
@@ -131,9 +132,9 @@ def get_prestamo(id):
     prestamo = Prestamo.query.filter_by(id=id).first()
     if prestamo:
       return make_response(jsonify({'prestamo': prestamo.json()}), 200)
-    return make_response(jsonify({'message': 'prestamo not found'}), 404)
+    return make_response(jsonify({'message': 'prestamo no encontrado'}), 404)
   except :
-    return make_response(jsonify({'message': 'error getting prestamo'}), 500)
+    return make_response(jsonify({'message': 'error obteniendo prestamo'}), 500)
   
 # get a libros by id
 @app.route('/libros/<int:id>', methods=['GET'])
@@ -142,21 +143,21 @@ def get_libro(id):
     libro = Libro.query.filter_by(id=id).first()
     if libro:
       return make_response(jsonify({'libro': libro.json()}), 200)
-    return make_response(jsonify({'message': 'libro not found'}), 404)
+    return make_response(jsonify({'message': 'libro no encontrado'}), 404)
   except :
-    return make_response(jsonify({'message': 'error getting libro'}), 500)
+    return make_response(jsonify({'message': 'error obteniendo libro'}), 500)
 
-# update a user
-@app.route('/users/<int:id>', methods=['PUT'])
-def update_user(id):
+# update a Usuario
+@app.route('/usuarios/<int:id>', methods=['PUT'])
+def update_usuario(id):
   try:
-    user = User.query.filter_by(id=id).first()
-    if user:
+    usuario = Usuario.query.filter_by(id=id).first()
+    if usuario:
       data = request.get_json()
-      user.nombre = data['nombre']
-      user.domicilio = data['domicilio']
-      user.telefono =data ['telefono']
-      user.email = data['email']
+      usuario.nombre = data['nombre']
+      usuario.domicilio = data['domicilio']
+      usuario.telefono =data ['telefono']
+      usuario.email = data['email']
       db.session.commit()
       return make_response(jsonify({'message': 'usuario actualizado'}), 200)
     return make_response(jsonify({'message': 'usuario no encontrado'}), 404)
@@ -165,7 +166,7 @@ def update_user(id):
   
 # update a prestamo
 @app.route('/prestamos/<int:id>', methods=['PUT'])
-def update_user(id):
+def update_prestamo(id):
   try:
     prestamo = Prestamo.query.filter_by(id=id).first()
     if prestamo:
@@ -199,18 +200,18 @@ def update_libro(id):
   except :
     return make_response(jsonify({'message': 'error actualizando libro'}), 500)
 
-# delete a user
-@app.route('/users/<int:id>', methods=['DELETE'])
-def delete_user(id):
+# delete a Usuario
+@app.route('/usuarios/<int:id>', methods=['DELETE'])
+def delete_usuario(id):
   try:
-    user = User.query.filter_by(id=id).first()
-    if user:
-      db.session.delete(user)
+    usuario = Usuario.query.filter_by(id=id).first()
+    if usuario:
+      db.session.delete(usuario)
       db.session.commit()
-      return make_response(jsonify({'message': 'user eliminado'}), 200)
+      return make_response(jsonify({'message': 'Usuario eliminado'}), 200)
     return make_response(jsonify({'message': 'usuario no encontrado'}), 404)
   except :
-    return make_response(jsonify({'message': 'error eliminando user'}), 500)
+    return make_response(jsonify({'message': 'error eliminando Usuario'}), 500)
 	
   # delete prestamo
 @app.route('/prestamos/<int:id>', methods=['DELETE'])

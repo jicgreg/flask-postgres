@@ -67,13 +67,10 @@ Para mostrar todos los contenedores (en ejecución y detenidos):
  
 ![ps-a](https://github.com/jicgreg/flask-postgres/blob/cd1b1e367505101b59d835e7b8ebeb55dc43a0ab/ps-a.jpg)
 
-Para probar la conexión db, utilice la siguiente configuración:
+Para probar la conexión db, utilizamos el software DBeaver con la siguiente configuración:
 
+![conexion base de datos](https://github.com/jicgreg/flask-postgres/blob/997993e1ed46ad42d088d510c1ad1e170b57d991/conexion%20base%20de%20datos.jpg)
 
-
-
-Para verificar la conexión a la base de datos. Usamos el software DBeaver
- 
 
 Para construir y ejecutar la aplicación Flask.
 

@@ -59,6 +59,8 @@ Para comprobar si el contenedor se está ejecutando:
 	
 	docker compose logs
  
+ ![logs](https://github.com/jicgreg/flask-postgres/blob/897051f84a9117752ed674cfab04eadc93ddcaab/logs.jpg)
+ 
 Para mostrar todos los contenedores (en ejecución y detenidos):
 	
 	docker ps -a

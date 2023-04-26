@@ -51,7 +51,7 @@ Para ejecutar el contenedor Postgres:
 
 	docker compose up -d flask_db
 
-![image.png]
+![flask_db](https://github.com/jicgreg/flask-postgres/blob/0bdde73870bb860f7b1a530c78297f85d0580779/flask_db.jpg)
 
 
 

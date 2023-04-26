@@ -74,9 +74,9 @@ Para probar la conexión db, utilizamos el software DBeaver con la siguiente con
 
 Para construir y ejecutar la aplicación Flask.
 
-	docker compose build
 	docker compose up –build flask_app
  
+ ![flas_app](https://github.com/jicgreg/flask-postgres/blob/d01e7e4cfec20c26c6806b3076cb6e3526b002d9/flask_app.jpg)
 
 Para comprobar si la imagen se ha creado correctamente:
 

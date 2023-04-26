@@ -86,15 +86,19 @@ Para comprobar si la imagen se ha creado correctamente:
 Ejecutar el servicio flask_app
 	
 	Sudo docker compose up flask_app
+![up flask_app](https://github.com/jicgreg/flask-postgres/blob/52dc251b95b041d2a71500bfd06593cd0f22ca45/up%20flask_app.jpg)
 
 
 Ejecutar docker-compose y sus servicios
 	
 	docker-compose up -d
  
+ 
+##Probar la aplicación
 
 ## Validar operaciones  GET, POST, PUT,DELETE
 
+En cualquier navegador y visitemos localhost:4000/test o localhost:4000/
 
 
 ## Referencias

@@ -65,12 +65,12 @@ Para mostrar todos los contenedores (en ejecución y detenidos):
 	
 	docker ps -a
  
+![ps-a](https://github.com/jicgreg/flask-postgres/blob/cd1b1e367505101b59d835e7b8ebeb55dc43a0ab/ps-a.jpg)
 
 Para probar la conexión db, utilice la siguiente configuración:
-•	Anfitrión: localhost
-•	Puerto: 5432
-•	Usuario: postgres
-•	Contraseña: postgres•	Base de datos: Postgres
+
+
+
 
 Para verificar la conexión a la base de datos. Usamos el software DBeaver
  

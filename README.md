@@ -94,11 +94,18 @@ Ejecutar docker-compose y sus servicios
 	docker-compose up -d
  
  
-##Probar la aplicación
+## Probar la aplicación
+
+En cualquier navegador y visitemos localhost:4000/test o localhost:4000/
+
+![Localhostb](https://github.com/jicgreg/flask-postgres/blob/30f0a7231570f33e110b0179ada317cf6204c927/localhostb.jpg)
+
+![ localhostp]( https://github.com/jicgreg/flask-postgres/blob/30f0a7231570f33e110b0179ada317cf6204c927/localhostp.jpg)
+
 
 ## Validar operaciones  GET, POST, PUT,DELETE
 
-En cualquier navegador y visitemos localhost:4000/test o localhost:4000/
+
 
 
 ## Referencias
